@@ -11,6 +11,11 @@ class Promo
     private array $moyenneParMatiere;
     private float $moyenneGenerale;
 
+    public function __construct(ICalculator $calculator)
+    {
+        $this->calculator = $calculator;
+    }
+
 
     public function getEleves(): array
     {

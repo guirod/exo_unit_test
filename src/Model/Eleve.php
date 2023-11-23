@@ -12,6 +12,11 @@ class Eleve
     private array $moyenneParMatiere;
     private float $moyenneGenerale;
 
+    public function __construct(ICalculator $calculator)
+    {
+        $this->calculator = $calculator;
+    }
+
     public function getNom(): string
     {
         return $this->nom;
