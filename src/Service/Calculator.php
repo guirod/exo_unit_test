@@ -15,7 +15,7 @@ class Calculator implements ICalculator
     {
     }
 
-    public function getInstance(): Calculator
+    public static function getInstance(): Calculator
     {
         if (self::$instance === null) {
             self::$instance = new Calculator();
